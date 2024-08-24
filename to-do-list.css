@@ -1,0 +1,136 @@
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    } 50% {
+        transform: rotate(180deg);
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(15, 15, 15);
+    color: rgb(220, 220, 220);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.css-para-container,
+.css-elements {
+    width: 577px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.css-text {
+    margin-right: 3px;
+    align-items: center;
+    font-size: 15px;
+    border: 2px solid black;
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+
+.css-title {
+    padding: 7.3px 2px;
+}
+
+.css-title::placeholder {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.css-date {
+    padding: 6px 2px;
+}
+
+.css-add-button {
+    font-size: 18px;
+    background-color: rgb(102, 148, 102);
+    color: white;
+    padding: 7.5px 2px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px gray;
+    cursor: pointer;
+    transition: border-radius 0.15s, box-shadow 0.01s, opacity 0.15s;
+}
+
+span {
+    font-weight: bolder;
+    margin-right: 5px;
+    animation: rotate 3s backwards;
+}
+
+.js-loader {
+    animation: rotate 2s infinite;
+}
+
+.css-add-button:hover {
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+.css-add-button:active {
+    box-shadow: none;
+}
+
+.text-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ontype-title {
+    color: red;
+    font-size: 15px;
+    font-style: italic;
+    margin: 0px;
+    margin-left: 30px;
+}
+
+.div-records-button {
+    font-size: 18px;
+    font-weight: bolder;
+    width: auto;
+    background-color: rgb(156, 43, 43);
+    color: white;
+    padding: 5px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.div-records-button span {
+    transition: transform 0.2s ease-in, opacity 0.2s ease-in;
+}
+.js-delete {
+    font-weight: 400;
+    opacity: 0;
+    animation: rotate 2s backwards;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(156, 43, 43);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-records-button:hover .js-delete {
+    opacity: 1;
+    animation: rotate ;
+}
+
+.css-para-container,
+.css-elements {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 211px 140px 110px 100px;
+    margin: 10px 2px;
+    row-gap: 15px;
+    column-gap: 5px;
+}
