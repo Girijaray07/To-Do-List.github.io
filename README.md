@@ -3,4 +3,4 @@
 
 
 Sample of the Webpage:
-    https://girijaray07.github.io/To-Do-List.github.io/
+    https://girijaray07.github.io/To-Do-List/
